@@ -1,3 +1,7 @@
 reports/
+report.txt
+myreport.txt
+output.txt
+scanme_report.txt
 __pycache__/
 *.pyc
