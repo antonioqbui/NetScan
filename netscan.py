@@ -233,19 +233,26 @@ def confirm_authorization(host: str) -> bool:
     else:
         return False
     
-parser = argparse.ArgumentParser(description="NetScan - Network Vulnerability Scanner")
-parser.add_argument("--host", required=True, help="Target host to scan")
-parser.add_argument("--start-port", type=int, default=1, help="First port to scan")
-parser.add_argument("--end-port", type=int, default=1024, help="Last port to scan")
-parser.add_argument("--output", default="report.txt", help="Output report filename")
-args = parser.parse_args()
 
+
+
+def main():
+    host = input("Target host: ")
+    start_port = input("Starting port [1]: ")
+    end_port = input("Ending port [1024]: ")
+    output = input("Output filename [report.txt]: ")
+
+    start_port = int(start_port) if start_port else 1
+    end_port = int(end_port) if end_port else 1024
+    output = output if output else "report.txt"
+
+    if confirm_authorization(host):
+        results = scan_host(host, start_port, end_port)
+        generate_report(results, output)
+        print(f"Scan complete. Report saved to {output}")
+    else:
+        print("Authorization not confirmed. Exiting.")
 
 
 if __name__ == "__main__":
-    if confirm_authorization(args.host):
-        results = scan_host(args.host, args.start_port, args.end_port)
-        generate_report(results, args.output)
-        print(f"Scan complete. Report saved to {args.output}")
-    else:
-        print("Authorization not confirmed. Exiting.")  
+    main() 
