@@ -1,0 +1,41 @@
+Port: 80
+Service: HTTP
+Product: SimpleHTTP 0.6, Python 3.14.7
+Vulnerabilities: 
+CVE-2025-4517 | CVSS: 9.4 | Risk: Critical
+CVE-2026-11816 | CVSS: 8.1 | Risk: High
+CVE-2025-4138 | CVSS: 7.5 | Risk: High
+CVE-2025-4330 | CVSS: 7.5 | Risk: High
+CVE-2026-47265 | CVSS: 7.5 | Risk: High
+CVE-2026-50269 | CVSS: 7.5 | Risk: High
+CVE-2026-54273 | CVSS: 7.5 | Risk: High
+CVE-2026-54274 | CVSS: 7.5 | Risk: High
+CVE-2026-54275 | CVSS: 7.5 | Risk: High
+CVE-2026-54277 | CVSS: 7.5 | Risk: High
+CVE-2026-54278 | CVSS: 7.5 | Risk: High
+CVE-2026-54279 | CVSS: 7.5 | Risk: High
+CVE-2026-54280 | CVSS: 7.5 | Risk: High
+CVE-2026-34993 | CVSS: 6.4 | Risk: Medium
+CVE-2026-54276 | CVSS: 6.1 | Risk: Medium
+CVE-2024-12718 | CVSS: 5.3 | Risk: Medium
+CVE-2026-45409 | CVSS: 5.3 | Risk: Medium
+CVE-2026-48776 | CVSS: 4.2 | Risk: Medium
+CVE-2026-5713 | CVSS: 0.0 | Risk: None
+CVE-2026-12003 | CVSS: 0.0 | Risk: None
+CVE-2026-59881 | CVSS: 0.0 | Risk: None
+CVE-2026-69243 | CVSS: 0.0 | Risk: None
+CVE-2026-69244 | CVSS: 0.0 | Risk: None
+
+
+Port: 135
+Service: RPC
+Product: No match found
+Vulnerabilities: 
+
+
+Port: 445
+Service: SMB
+Product: No match found
+Vulnerabilities: 
+
+
